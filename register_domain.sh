@@ -1,6 +1,6 @@
 #!bin/bash
 
-domain=$(head -2 ./modules/data/register-domain.json | sed -r -e's/DomainName//' -e 's/[\{\:\"\,]//g' ) 
+domain=$(head -2 ./register-domain.json | sed -r -e's/DomainName//' -e 's/[\{\:\"\,]//g' ) 
 
 domain=$(echo $domain | sed 's/ //g')
 
